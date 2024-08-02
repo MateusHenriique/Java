@@ -74,7 +74,7 @@ public class IdiomaSwing extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Locale idioma = Locale.getDefault();
-        idiomaSistema.setText(idioma.getDisplayLanguage()));
+        idiomaSistema.setText(idioma.getDisplayLanguage());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
