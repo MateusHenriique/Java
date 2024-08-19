@@ -11,7 +11,7 @@ public class Tabuda {
         int resultado;
         while (c <= 10) {
             resultado = n1 * c; 
-            System.out.println(n1 +" x " + c + "= " + resultado);
+            System.out.println(n1 +" x " + c + " = " + resultado);
             c++;
         }
 
