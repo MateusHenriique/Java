@@ -10,6 +10,7 @@ public class EntradadeDados {
         float nota = teclado.nextFloat();
         System.out.format("A nota de %s é %.2f \n", nome, nota);
 
+        teclado.close();
     }
     
 }
