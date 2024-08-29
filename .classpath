@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="AumentoSalario/src"/>
+	<classpathentry kind="src" path="CalculoIdade/src"/>
+	<classpathentry kind="src" path="EntradaDeDados/src"/>
+	<classpathentry kind="src" path="Fibonacci/src"/>
+	<classpathentry kind="src" path="javaTokio2024/src"/>
+	<classpathentry kind="src" path="JogoDaVelhaJava/src"/>
+	<classpathentry kind="src" path="ParOuImpar/src"/>
+	<classpathentry kind="src" path="Tabuada/src"/>
+	<classpathentry kind="output" path="JogoDaVelhaJava/bin"/>
+</classpath>
