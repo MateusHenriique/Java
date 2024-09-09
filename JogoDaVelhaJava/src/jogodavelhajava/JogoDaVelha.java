@@ -41,8 +41,7 @@ public class JogoDaVelha {
 		}
 		return matrizFunc;
 	}
-	
-	
+
 	public static String[][] escreveJogo(String matrizFunc[][], String jogada, char xouO) {
 		for (int i = 0; i < 3; i++) {
 			
@@ -64,11 +63,25 @@ public class JogoDaVelha {
 	}
 
 	public static boolean verificaAcabou(String matrizFunc[][],boolean acabou) {
-		
-			if(matrizFunc[1][0].equals("X") && matrizFunc[1][1].equals("X") && matrizFunc[1][2].equals("X")) {
+	
+		for (int i = 0; i < 3; i++) {
+			
+			if(matrizFunc[i][0].equals("X") && matrizFunc[i][1].equals("X") && matrizFunc[i][2].equals("X")) {
 				System.out.println("\nX Ganhou!");
 				acabou = true;
 			}
+		}
+		
+	/*	if(matrizFunc[0][0].equals("X") && matrizFunc[0][1].equals("X") && matrizFunc[0][2].equals("X")) {
+			System.out.println("\nX Ganhou!");
+			acabou = true;
+		}else if (matrizFunc[1][0].equals("X") && matrizFunc[1][1].equals("X") && matrizFunc[1][2].equals("X")) {
+			System.out.println("\nX Ganhou!");
+			acabou = true;
+		}else if (matrizFunc[2][0].equals("X") && matrizFunc[2][1].equals("X") && matrizFunc[2][2].equals("X")) {
+			System.out.println("\nX Ganhou!");
+			acabou = true;
+		}*/
 		
 		return acabou;
 	}
