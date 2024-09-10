@@ -22,7 +22,7 @@ public class JogoDaVelha {
 			int i = 0, totJogadas = 0;
 			
 			
-			while (acabou == false) {
+			while (!acabou) {
 				
 				if(i % 2 == 0) {
 					xouO = "X";
