@@ -6,10 +6,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class EditaArquivo {
-	private String caminho = "S:\\DEV\\Workspaces\\Eclipse\\Java\\Projete-ArquivoTxt\\src";
+	private String caminho;
+	
+	public EditaArquivo(String caminho) {
+		this.caminho = caminho;
+	}
 	
 	public void criaArquivo(String nome) throws IOException {
-		this.caminho = nome;
+		this.caminho += nome;
+
 		FileWriter escritor = new FileWriter(getCaminho());
 		escritor.write("Este e um arquivo criado em por um codigo java");
 		escritor.close();
@@ -35,8 +40,9 @@ public class EditaArquivo {
 		FileWriter deleta = new FileWriter(getCaminho());
 		deleta.close();
 	}
-	
+
 	public String getCaminho() {
 		return this.caminho;
 	}
+	
 }

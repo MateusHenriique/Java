@@ -8,10 +8,12 @@ import teste.editaarquivo.EditaArquivo;
 public class Teste {
 
 	public static void main(String[] args) throws IOException {
-		EditaArquivo editaArquivo = new EditaArquivo();
 		Scanner scannerInt = new Scanner(System.in);
 		Scanner scannerStr = new Scanner(System.in);
 		int operacao = 0;
+		
+		System.out.println("Qual o caminho do arquivo que voce deseja criar: ");
+		EditaArquivo editaArquivo = new EditaArquivo(scannerStr.nextLine());
 		
 		System.out.println("-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 		System.out.println("Qual o nome do arquivo que voce deseja criar: ");
@@ -33,7 +35,7 @@ public class Teste {
 
 				case 1:
 					System.out.println("-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-					System.out.println("digite o conteudo que voce deseja adicionar no seu arquivo: [ (fim) para finalizar]");
+					System.out.println("digite o conteudo que voce deseja adicionar no seu arquivo:  [fim] para finalizar.");
 					String conteudo = scannerStr.nextLine();
 					while (!conteudo.equals("fim")) {
 						conteudo = scannerStr.nextLine();
@@ -50,7 +52,7 @@ public class Teste {
 					break;
 				case 4:
 					System.out.println("-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-					System.out.println("Finalizando programa...");
+					System.out.println("Programa finalizado!");
 					break;
 				default:
 					System.out.println("-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
@@ -60,7 +62,7 @@ public class Teste {
 		scannerInt.close();
 		scannerStr.close();
 		System.out.println("-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
-		System.out.println("Programa finalizado!");
+		
 
 	}
 }
